@@ -7,6 +7,7 @@ import tweepy
 from time import sleep
 
 
+
 # -----------４文字
 auth = tweepy.OAuthHandler(CK, CS)
 auth.set_access_token(AT, AS)
@@ -75,7 +76,7 @@ def TLmanabu3():
         print(mojityou)
         Wan = mojityou // 2
         Wan2 = mojityou % 2
-        second = Wan + Wan2
+#        second = Wan + Wan2
         print(Wan)
         print(Wan2)
         global ex
