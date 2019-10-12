@@ -1,7 +1,10 @@
 import tweepy
 from time import sleep
 
-
+consumer_key=''
+consumer_secret=''
+access_token_key=''
+access_token_secret=''
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token_key, access_token_secret)
@@ -45,4 +48,4 @@ for status in api.home_timeline(count=1):
     print(tex)
 extt =text + tex
 nextt = removetext(extt)
-api.update_status("TLから学ぶbotのテスト：" + nextt)
+api.update_status(nextt)
